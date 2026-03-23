@@ -105,21 +105,7 @@ python3 pytorch/plot_results.py
 
 ## Results
 
-### Latency (ms) — PyTorch
-
-![PyTorch Latency](plots/latency_pytorch.png)
-
-### Latency (ms) — cuBLAS
-
-![cuBLAS Latency](plots/latency_cuda.png)
-
-### Throughput (TFLOPS) — PyTorch
-
-![PyTorch Throughput](plots/throughput_pytorch.png)
-
-### Throughput (TFLOPS) — cuBLAS
-
-![cuBLAS Throughput](plots/throughput_cuda.png)
+Please see the plots page for the result plots
 
 ### Summary Table — PyTorch
 
