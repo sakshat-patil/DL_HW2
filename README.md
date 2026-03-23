@@ -137,7 +137,7 @@ Please see the plots page for the result plots
 
 **1. Reduced mantissa precision → faster multiply-accumulate**
 
-Standard IEEE FP32 uses a 23-bit mantissa. TF32 reduces this to **10 bits** while
+Standard IEEE FP32 uses 23-bit mantissa. TF32 reduces this to **10 bits** while
 keeping the full 8-bit exponent, so the dynamic range is unchanged but each
 multiply is far cheaper in silicon. The result is still accumulated into a full
 FP32 accumulator, so output precision is largely preserved for typical DNN workloads.
