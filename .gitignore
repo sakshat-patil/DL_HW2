@@ -1,0 +1,25 @@
+# Compiled CUDA/C++ artefacts
+*.o
+*.out
+cuda/cublas_bench
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated results and plots (keep the directories, ignore contents)
+results/*.csv
+plots/*.png
