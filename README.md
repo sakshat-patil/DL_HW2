@@ -153,7 +153,7 @@ equivalent scalar FMA sequence.
 **3. Throughput scaling with matrix size**
 
 For small matrices (N ≤ 512) the overhead of loading and storing the tiles can
-dominate the raw compute time, and the Tensor Core advantage may be modest. As N
+dominate the raw compute time and the Tensor Core advantage may be modest. As N
 grows the computation becomes **compute-bound** rather than memory-bound, and the
 Tensor Core throughput advantage compounds. Our results confirm this: at N=256 there
 is essentially no speedup, while at N=8192 we see a **6.9x speedup (PyTorch)** and
@@ -169,7 +169,7 @@ roughly **4× lower peak throughput** compared to Tensor Cores on Ampere.
 
 **5. PyTorch vs cuBLAS comparison**
 
-The PyTorch and cuBLAS results are closely aligned, which is expected since PyTorch
+The PyTorch and cuBLAS results are aligned, which is expected since PyTorch
 uses cuBLAS under the hood for matrix multiplication. The cuBLAS implementation
 shows slightly higher throughput (142 vs 130 TFLOPS at N=8192) because it avoids
 the Python/PyTorch overhead and calls cuBLAS directly.
